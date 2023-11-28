@@ -10,16 +10,17 @@
 // BigInt => very large number
 // string => ""
 // boolean => true/false
-//null => standalone value
+// null => standalone value
 // undefined => value not defined/assigned
-//symbol => used for uniquenes (mostly used with React)
+// NaN
+// symbol => used for uniquenes (mostly used with React)
 
 let age = 26
 let myName = "Divyansh"
 let isStudying = true
 let goingToOffice
 
-//typeof operator
+//typeof 
 console.log(typeof age)
 console.log(typeof myName)
 console.log(typeof isStudying)
@@ -30,3 +31,9 @@ console.log(typeof null)
 
 // typeof undefined is undefined because undefined is a type in itself
 console.log(typeof undefined)
+
+// NaN is also a number
+console.log(typeof (NaN));
+
+//typeof can also be used like method
+console.log(typeof (isStudying))
