@@ -4,6 +4,7 @@ let third = Number(null)
 let fourth = Number(undefined)
 let fifth = Number(true)
 let sixth = Number(false)
+let seventh = Number("")
 
 
 // console.log(typeof first, first)
@@ -12,6 +13,7 @@ let sixth = Number(false)
 // console.log(typeof fourth, fourth)   // => NaN is also a number
 // console.log(typeof fifth, fifth)
 // console.log(typeof sixth, sixth)
+//console.log(typeof seventh, seventh)
 
 
 // ******************** Operations on Data *********************
