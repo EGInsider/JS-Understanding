@@ -48,7 +48,21 @@ const myArr = [1,2,3,4,5];
 // console.log(cuisine);
 
 // converting multidimensional arrays into one-dimensional array
-const multiArr = [1,2,3,[4,5],6,[7,8,[9,10,[11,12]]]]
-console.log(multiArr.flat(Infinity));
+// const multiArr = [1,2,3,[4,5],6,[7,8,[9,10,[11,12]]]]
+// console.log(multiArr.flat(Infinity));
 
+// splice method returns a new array containing elements deleted from original array
+// also adds/deletes to/from the original array
+// const modArr = myArr.splice(5,0,6,7,8)
+// console.log(modArr);
+// console.log(myArr);
 
+// slice method returns a portion of an array
+// doesn't modify the original array
+// console.log(myArr.slice(1,3));
+// console.log(myArr);
+
+// convert other datatypes into array
+// console.log(Array.from("Divyansh"));
+// const myObj = {name:'Divyansh', age:26}
+// console.log(Object.keys(myObj))
