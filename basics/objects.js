@@ -48,3 +48,42 @@ const obj2 = {3:"c", 4:"d"}
 
 // object.assign(target, source1, source2,.....sourceN)
 // console.log(Object.assign({}, obj1, obj2)); // right
+
+// console.log(Object.keys(myself));   // get keys of an object
+// console.log(Object.values(myself)); // get values of an object
+// console.log(Object.entries(myself));   // get properties of an object as array of arrays 
+
+// check if an object has a particular property
+// console.log(Object.hasOwnProperty('isLoggedIn'));
+// console.log(Object.hasOwnProperty('name'));
+
+// -------------------Object Destructuring-----------------------
+
+// const { name, surname, ...otherInfo} = myself
+// console.log(`Hello ${name} ${surname}`);
+
+// let name, surname
+// ({name, surname} = myself)
+// console.log(`Hello ${name} ${surname}`);
+
+// using a different name from property key names
+// const { name: foreName, surname: lastName} = myself
+// console.log(`Hello ${foreName} ${lastName}`);
+
+// assigning default values
+// const { name = "Divyansh", surname = "Mishra"} = {}
+// console.log(`Hello ${name} ${surname}`);
+
+// passing in function parameter
+// function greet({ name, surname }){
+//     console.log(`Hello ${name} ${surname}`);
+// }
+
+// greet(myself);
+
+// invoking function without passing argument
+// function greet({ name = "Divyansh" } = {}){
+//     console.log(`Hello ${name}`);
+// }
+
+// greet();
