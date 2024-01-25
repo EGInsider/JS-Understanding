@@ -41,3 +41,26 @@ function loggedInUser(username){
 // console.log(addNumbers(10, 200, 4000, 80000));
 // console.log(addNumbers(1,3));
 
+// calling addNumbers before definition allowed
+addNumbers(5,45,60,78)
+
+// addNumbers definition -  function will be hoisted
+function addNumbers(...numbers){
+    var sum = 0;
+    for(var i in numbers){
+        sum += numbers[i]
+    }
+
+    console.log(sum);
+}
+
+// calling addition before initialization not allowed
+addition(7,4,67,12)
+const addition = function(...numbers){
+    var sum = 0;
+    for(var i in numbers){
+        sum += numbers[i]
+    }
+
+    console.log(sum);
+}
